@@ -1,0 +1,41 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.19.0",
+        "bootstrap-sass": "^3.3.7",
+        "browser-sync": "^2.26.7",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "cross-env": "^5.2.0",
+        "jquery": "^3.1.0",
+        "vue": "^2.1.10"
+    },
+    "dependencies": {
+        "@chenfengyuan/vue-number-input": "^0.5.2",
+        "animate.css": "^3.6.1",
+        "bootstrap": "^3.3.7",
+        "bootstrap-material-design": "^0.5.10",
+        "datatables.net": "^1.10.19",
+        "datatables.net-bs4": "^1.10.19",
+        "dayjs": "^1.8.14",
+        "featherlight": "^1.7.13",
+        "fs": "^0.0.1-security",
+        "jspdf": "^1.4.1",
+        "laravel-mix": "git://github.com/JeffreyWay/laravel-mix.git#v3",
+        "mobile-detect": "^1.4.4",
+        "object-fit-images": "^3.2.4",
+        "rasterizehtml": "^1.3.0",
+        "select2": "^4.0.6-rc.1",
+        "toastr": "^2.1.4",
+        "vue-js-modal": "^1.3.31",
+        "vue-select": "^2.5.1"
+    }
+}

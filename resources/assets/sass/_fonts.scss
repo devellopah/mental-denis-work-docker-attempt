@@ -1,0 +1,72 @@
+// Fonts
+@font-face {
+  font-family: ProximaNova;
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), 
+       url("../fonts/ProximaNova-Regular.woff") format("woff"), 
+       url("../fonts/ProximaNova-Regular.ttf") format("truetype"), 
+       url("../fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg"), 
+       url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"), 
+       url("../fonts/ProximaNova-Bold.woff") format("woff"), 
+       url("../fonts/ProximaNova-Bold.ttf") format("truetype"), 
+       url("../fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg"), 
+       url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), 
+       url("../fonts/ProximaNova-Semibold.woff") format("woff"), 
+       url("../fonts/ProximaNova-Semibold.ttf") format("truetype"), 
+       url("../fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg"), 
+       url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova-Light.woff2") format("woff2"), 
+       url("../fonts/ProximaNova-Light.woff") format("woff"), 
+       url("../fonts/ProximaNova-Light.ttf") format("truetype"), 
+       url("../fonts/ProximaNova-Light.svg#ProximaNova-Light") format("svg"), 
+       url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/MullerBold.eot");
+  src: url("../fonts/MullerBold.woff2") format("woff2"), 
+       url("../fonts/MullerBold.woff") format("woff"), 
+       url("../fonts/MullerBold.ttf") format("truetype"), 
+       url("../fonts/MullerBold.svg#MullerBold") format("svg"), 
+       url("../fonts/MullerBold.eot?#iefix") format("embedded-opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/MullerRegular.eot");
+  src: url("../fonts/MullerRegular.woff2") format("woff2"), 
+       url("../fonts/MullerRegular.woff") format("woff"), 
+       url("../fonts/MullerRegular.ttf") format("truetype"), 
+       url("../fonts/MullerRegular.svg#MullerRegular") format("svg"), 
+       url("../fonts/MullerRegular.eot?#iefix") format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal;
+}

@@ -1,0 +1,12 @@
+select {
+    width: 100%;
+    height: 42px;
+    padding: 10px;
+    border: 1px solid rgba(60,60,60,.26);
+    border-radius: 4px;
+    white-space: normal;
+}
+.bg-success,
+.bg-danger {
+    padding: 15px;
+}

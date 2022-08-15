@@ -1,0 +1,48 @@
+POST /payment/notice HTTP/1.1
+Accept:            */*
+Content-Length:    903
+Content-Type:      application/json
+Cookie:            XSRF-TOKEN=eyJpdiI6IkFDN1RpZVpCa0g5ZmJWYnhKcm5yOUE9PSIsInZhbHVlIjoiaDhrUG9xMSswWTZBNkMwRTBSV2FBMnlmY3A0Y1wvRkY3Y1VpMXJsU2FZT1JIZEh2SVN3RTc0a2JrcGt2bHhNR0ciLCJtYWMiOiI2MDNjYjQ4MDlkYmExNzllOTJhZmVhNzUwZGQyNzRhZTU5MDg3MmY1ZjUyNDUyY2YwMGMxNzJmZjBjZmY3YTI4In0%3D; laravel_session=eyJpdiI6IlVYNkxBVEJ4SDdlV2VZSHJ0VmJWdmc9PSIsInZhbHVlIjoiSHNsR0puaFVEYUpJTzhpMUFXOTB6M3pRb3RKZVJFb2w0a1kwS0F1dE9DS1B5MVk4Z2ZKYW1RSGgyRHlCOXZLUSIsIm1hYyI6IjBjYjQ5Yjk4Zjc3NDEyNTkzNzZhZTkwMGUxZmM3NTc0ZjY3MTMzNjllMDRiMGU4ZmUxOWUyYjU3NDJmMjYwOGEifQ%3D%3D
+Host:              mental.bespalov.digital
+Signature:         v1 26a16375 1 MGQCMBNcVKIuQtwRshruUaLnCFgOZ4XgRFDj3FK8W8mlrx+bkapuZWbSc3V7Ns7rYxKjsAIwUHW95/dKGjaMlzcZrd1hN0nh5+S8DOmnGP+aLx07z/8woE+SERfGuaOzWBz1YsOp
+User-Agent:        AHC/2.1
+X-Forwarded-Proto: https
+X-Real-Ip:         77.75.154.206
+X-Server-Addr:     87.236.16.26
+Cookie: XSRF-TOKEN=xvUmoBluJmmBUPhWgYvEtnKAfdlxfuJnun7dGIwM; laravel_session=5VTVPokLdMoEAzqoQykKB18AjX5ivMymLmo4O9W4
+
+{
+  "type" : "notification",
+  "event" : "payment.canceled",
+  "object" : {
+    "id" : "26a154af-000f-5000-9000-10855df0f7f7",
+    "status" : "canceled",
+    "paid" : false,
+    "amount" : {
+      "value" : "600.00",
+      "currency" : "RUB"
+    },
+    "created_at" : "2020-07-15T17:46:23.395Z",
+    "description" : "Оплата по тарифу Тариф Всё за 600, здесь еще какой-то текст",
+    "metadata" : {
+      "tariff_id" : "4",
+      "user_id" : "5",
+      "scid" : "1846272"
+    },
+    "payment_method" : {
+      "type" : "bank_card",
+      "id" : "26a154af-000f-5000-9000-10855df0f7f7",
+      "saved" : false
+    },
+    "recipient" : {
+      "account_id" : "728975",
+      "gateway_id" : "1749959"
+    },
+    "refundable" : false,
+    "test" : true,
+    "cancellation_details" : {
+      "party" : "yandex_checkout",
+      "reason" : "general_decline"
+    }
+  }
+}

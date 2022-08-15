@@ -1,0 +1,136 @@
+%view-head-link {
+  color:  #272727;
+  font-size: 14px;
+  font-weight: 600;
+
+  &:hover {
+    color: $main-theme-color;
+  }
+}
+
+%view-card-link {
+  color: #212121;
+  font-size: 14px;
+  font-weight: 600;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 25px;
+  display: block;
+
+  &:hover {
+    color: $main-theme-color;
+  }
+}
+
+.View {}
+
+.View__head {
+    margin-bottom: 40px;
+}
+.View__headActions {
+  height: 42px;
+  padding: 0 15px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #e4e4e4;;
+  border-radius: 6px;
+}
+
+.View__headActionsSep {
+    background-color:  #e4e4e4;
+    width: 1px;
+    height: 34px;
+    margin: 0 12px;
+}
+
+.View__createCat {
+  @extend %view-head-link;
+
+}
+.View__createExercise {
+  @extend %view-head-link;
+}
+
+.View__createTask {
+  @extend %view-head-link;
+}
+
+// body
+.View__body {}
+
+.View__bodyActions {}
+
+.View__title {
+    color:  #18387c;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+// card
+.View__card {
+  height: 360px;
+  width: 246px;
+  background: $main-theme-color;
+  border: 7px solid $accent-theme-color;
+  padding: 30px 13px 10px 13px;
+  margin: 0 auto 3em;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.View__cardTitle {
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+
+  &--exercise {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+.View__cardTitle > span:first-child {
+  font-size: 95px;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+.View__cardTitle > span:last-child {
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 12px;
+}
+
+
+// card actions
+.View__cardReview,
+.View__cardEnter {
+  @extend %view-card-link;
+  background-color:  $accent-theme-color;
+  margin-bottom: 15px;
+
+}
+.View__cardEdit {
+  @extend %view-card-link;
+  background: #fff;
+}
+.View__cardDelete {
+  @extend %view-card-link;
+  width: 100%;
+  background: #ff7070;
+  margin-top: 15px;
+  border: 0;
+}

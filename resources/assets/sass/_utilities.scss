@@ -1,0 +1,42 @@
+.ov-x-auto {
+    overflow-x: auto;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.table-overflow {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.d-none {
+    display: none;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-md-column {
+
+    @media(min-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.flex-md-row {
+
+    @media(min-width: 768px) {
+        flex-direction: row;
+    }
+}

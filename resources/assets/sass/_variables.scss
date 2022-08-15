@@ -1,0 +1,46 @@
+$main-theme-color: #0188c5;
+$accent-theme-color: #95ee94;
+
+// Body
+$body-bg: #fff;
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Buttons
+$padding-base-vertical: 12px;
+$padding-base-horizontal: 17px;
+
+// Brands
+$brand-primary: $accent-theme-color;
+$brand-warning: #ecc249;
+$brand-danger: $main-theme-color;
+$state-warning-text: $brand-warning;
+
+// Typography
+$font-family-sans-serif: ProximaNova, Arial, sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1;
+$text-color: #636b6f;
+
+// Navbar
+$navbar-inverse-color: #fff;
+$navbar-inverse-bg: $accent-theme-color;
+$indigo: $navbar-inverse-bg;
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($main-theme-color, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+$mdb-checkbox-size: 20px;
+// Panels
+$panel-default-heading-bg: #fff;
+
+//container
+$grid-gutter-width: 30px;
+$container-large-desktop: (1170px + $grid-gutter-width);

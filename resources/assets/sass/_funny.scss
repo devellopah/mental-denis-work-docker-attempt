@@ -1,0 +1,119 @@
+.head {
+	width: 500px;
+	height: 500px;
+	background-color: #1185EA;
+	border-radius: 50%;
+	position: relative;
+    margin: auto;
+}
+
+.face {
+	width: 200px;
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	animation: rotateFace 3s linear infinite;
+}
+
+.eyes {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.eye {
+	width: 40px;
+	height: 40px;
+	background-color: #333;
+	border-radius: 50%;
+	transform-origin: center;
+	overflow: hidden;
+	position: relative;
+	animation: blink 3s ease infinite;
+		&:before {
+		content: '';
+		height: 50%;
+		width: 100%;
+		position: absolute;
+		top: -50%;
+		background-color: #1185EA;
+		z-index: 999;	 
+		animation: blinkDown 3s infinite;
+	}
+	&:after {
+		content: '';
+		height: 50%;
+		width: 100%;
+		position: absolute;
+		bottom: -50%;
+		background-color: #1185EA;
+        z-index: 999;
+		animation: blinkUp 3s infinite;
+	}
+	
+}
+
+.mouth {
+	width: 80px;
+	height: 35px;
+	background-color: transparent;
+	border: 10px solid #333;
+	border-top: 0;
+	border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+@keyframes rotateFace{
+	25% {
+		transform: rotate(20deg) translate(30px, 10px);
+		
+	}
+	50% {
+		transform: rotate(0) translate(0, 0);
+		
+	}
+	75% {
+		transform: rotate(-20deg) translate(-30px, -10px);
+	}
+	100% {
+		transform: rotate(0) translate(0, 0);
+		
+	}
+}
+
+@keyframes blinkDown {
+	0% {
+		top: -50%;
+	}
+	45% {
+		top: -50%;
+	}
+	50% {
+		top: 0%;
+	}
+	55% {
+		top: -50%;
+	}
+	100% {
+		top: -50%;
+	}
+}
+
+@keyframes blinkUp{
+	0% {
+		bottom: -50%;
+	}
+	45% {
+		bottom: -50%;
+	}
+	50% {
+		bottom: 0%;
+	}
+	55% {
+		bottom: -50%;
+	}
+	100% {
+		bottom: -50%;
+	}
+}
